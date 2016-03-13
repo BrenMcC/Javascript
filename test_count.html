@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+
+
+<script type="text/javascript">
+
+today = new Date(); // Date object
+
+BigDay = new Date("December 25, 2016"); // date expiry
+msPerDay = 24 * 60 * 60 * 1000 ; // amount of secs in a day.
+timeLeft = (BigDay.getTime() - today.getTime());// date expiry minus the current date .
+e_daysLeft = timeLeft / msPerDay;
+daysLeft = Math.floor(e_daysLeft);
+e_hrsLeft = (e_daysLeft - daysLeft)*24;
+hrsLeft = Math.floor(e_hrsLeft);
+minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+document.write("There are only<BR> <h5>" + daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes left </H4> Until christmas<P>");
+
+</script>
+</body>
+
+</html>
